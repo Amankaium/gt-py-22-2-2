@@ -1,4 +1,7 @@
 # cs 1.3
+from gren import Bazooka
+
+
 class Gun:
     def __init__(self, bullets):
         self.bullets = bullets
@@ -38,24 +41,6 @@ class MK16(Rifle):
 
 class AK47(Rifle):
     pass
-
-
-class Bazooka:
-    has_grenade = True
-
-    def shoot(self):
-        print("Kaboom!")
-        self.has_grenade = False
-
-    def reload(self):
-        print("Reloading...")
-        self.has_grenade = True
-
-    def grenade_exists(self):
-        if self.has_grenade:
-            print("Ready to blow smth")
-        else:
-            print("Need to reload...")
 
 
 class Scar(Rifle, Bazooka):
