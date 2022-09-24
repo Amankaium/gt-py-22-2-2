@@ -1,0 +1,7 @@
+mkdir eshop
+cd eshop
+python -m venv shopenv
+call shopenv\Scripts\activate
+pip install requests==2.28
+pip freeze
+deactivate
